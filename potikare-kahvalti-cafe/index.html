@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang='tr'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='PÃ–TÄ°KARE KAHVALTI CAFE - SanatÃ§Ä±lar PazarÄ±'nda Åiirli KahvaltÄ±lar. TahÄ±lpazarÄ±, 404. Sk. Ahmet Bedesteni Ä°ÅŸ HanÄ± No:5/F, 07040 MuratpaÅŸa/Antalya. Telefon: +905010515721. KÃ¶y yumurtasÄ±, taze peynirler, ÅŸiir dolu masalar.'>
+    <meta name='theme-color' content='#6F4E37'>
+    <title>PÃ–TÄ°KARE KAHVALTI CAFE | KaleiÃ§i, Antalya</title>
+    
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content='PÃ–TÄ°KARE KAHVALTI CAFE | SanatÃ§Ä±lar PazarÄ±'nda Åiirli KahvaltÄ±lar'>
+    <meta property='og:description' content='KÃ¶y yumurtasÄ±, taze peynirler, ÅŸiir dolu masalar. â˜… 4.8 Â· 169 yorum Â· TahÄ±lpazarÄ±, 404. Sk. Ahmet Bedesteni Ä°ÅŸ HanÄ± No:5/F, 07040 MuratpaÅŸa/Antalya'>
+    <meta property='og:image' content='https://images.unsplash.com/photo-1551024506-0bccd828d307?w=1200&q=80'>
+    <meta property='og:url' content='https://likyastudio.github.io/potikare-kahvalti-cafe/'>
+    <meta property='og:site_name' content='LIKYA STUDIOS Demo'>
+    <meta name='twitter:card' content='summary_large_image'>
+    <meta name='twitter:title' content='PÃ–TÄ°KARE KAHVALTI CAFE | SanatÃ§Ä±lar PazarÄ±'nda Åiirli KahvaltÄ±lar'>
+    <meta name='twitter:description' content='KÃ¶y yumurtasÄ±, taze peynirler, ÅŸiir dolu masalar. â˜… 4.8 Â· 169 yorum Â· TahÄ±lpazarÄ±, 404. Sk. Ahmet Bedesteni Ä°ÅŸ HanÄ± No:5/F, 07040 MuratpaÅŸa/Antalya'>
+    <meta name='twitter:image' content='https://images.unsplash.com/photo-1551024506-0bccd828d307?w=1200&q=80'>
+    
+    <script src='https://cdn.tailwindcss.com'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap' rel='stylesheet'>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6F4E37',
+                        secondary: '#D2B48C',
+                        cta: '#C49A6C',
+                        bg: '#FAF6F0',
+                        text: '#3D2B1F',
+                        textLight: '#3D2B1F99',
+                        glass: 'rgba(255, 255, 255, 0.8)',
+                        glassBorder: 'rgba(0, 0, 0, 0.08)',
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        .glass { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0, 0, 0, 0.08); }
+        .btn-cta { background: #C49A6C; color: white; padding: 14px 32px; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 20px #C49A6C80; border: none; cursor: pointer; }
+        .btn-cta:hover { background: #6F4E37; transform: translateY(-2px); box-shadow: 0 6px 28px #C49A6C99; }
+        .btn-cta:active { transform: translateY(0); }
+        .menu-card { transition: all 0.3s ease; }
+        .menu-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1); }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+        .focus-visible:focus { outline: 3px solid #C49A6C; outline-offset: 2px; }
+        .text-balance { text-wrap: balance; }
+        .animate-fade-in { animation: fadeIn 0.6s ease-out forwards; }
+        .animate-slide-up { animation: slideUp 0.6s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #FAF6F0; } ::-webkit-scrollbar-thumb { background: #6F4E37; border-radius: 4px; }
+        .hidden { display: none !important; }
+        .order-badge { position: fixed; bottom: 20px; right: 20px; z-index: 100; background: #C49A6C; color: white; padding: 12px 20px; border-radius: 50px; box-shadow: 0 4px 20px #C49A6C80; display: none; align-items: center; gap: 12px; font-weight: 600; }
+    </style>
+</head>
+<body class='bg-bg text-text min-h-screen antialiased'>
+    <a href='#main-content' class='sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:font-medium'>Ana iÃ§eriÄŸe atla</a>
+
+    <nav class='fixed top-0 left-0 right-0 z-40 glass px-4 py-3' role='navigation' aria-label='Ana navigasyon'>
+        <div class='max-w-6xl mx-auto flex items-center justify-between'>
+            <a href='#' class='flex items-center gap-2 focus-visible rounded-lg' aria-label='PÃ–TÄ°KARE KAHVALTI CAFE - Ana sayfa'>
+                <span class='font-heading text-xl font-bold text-primary hidden sm:block'>PÃ–TÄ°KARE KAHVALTI CAFE</span>
+            </a>
+            <div class='hidden md:flex items-center gap-6'>
+                <a href='#menu' class='text-textLight hover:text-primary transition-colors font-medium text-sm focus-visible rounded px-2 py-1'>MenÃ¼</a>
+                <a href='#hakkinda' class='text-textLight hover:text-primary transition-colors font-medium text-sm focus-visible rounded px-2 py-1'>HakkÄ±mÄ±zda</a>
+                <a href='#iletisim' class='text-textLight hover:text-primary transition-colors font-medium text-sm focus-visible rounded px-2 py-1'>Konum</a>
+                <a href='https://wa.me/905010515721' target='_blank' rel='noopener noreferrer' class='btn-cta text-sm px-5 py-2 focus-visible'>Masa AyÄ±rtÄ±n</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id='main-content'>
+        <section class='relative min-h-screen flex items-center justify-center px-4 pt-16 overflow-hidden' aria-labelledby='hero-title'>
+            <div class='absolute inset-0 -z-10' style='background-image: url(https://images.unsplash.com/photo-1551024506-0bccd828d307?w=1200&q=80); background-size: cover; background-position: center; background-color: #6F4E37;' aria-hidden='true'></div>
+            <div class='absolute inset-0 -z-10' style='background: linear-gradient(to bottom, #6F4E37CC, transparent 60%);' aria-hidden='true'></div>
+            <div class='max-w-6xl w-full'>
+                <div class='text-center lg:text-left animate-slide-up text-white'>
+                    <div class='inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6' style='background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.2);'>
+                        <span class='relative flex h-2 w-2'><span class='animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75'></span><span class='relative inline-flex rounded-full h-2 w-2 bg-white'></span></span>
+                        <span class='text-sm font-medium'>â˜… 4.8 Â· 169 Google yorumu</span>
+                    </div>
+                    <h1 id='hero-title' class='font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance'>SanatÃ§Ä±lar PazarÄ±'nda Åiirli KahvaltÄ±lar</h1>
+                    <p class='text-lg md:text-xl text-white/90 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0'>KÃ¶y yumurtasÄ±, taze peynirler, ÅŸiir dolu masalar.</p>
+                    <div class='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
+                        <a href='#menu' class='btn-cta w-full sm:w-auto text-center focus-visible inline-flex items-center justify-center gap-2'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Masa AyÄ±rtÄ±n</a>
+                        <a href='#menu' class='glass px-8 py-3 rounded-full font-semibold text-white hover:bg-white/20 transition-colors w-full sm:w-auto text-center focus-visible inline-flex items-center justify-center gap-2'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> MenÃ¼</a>
+                    </div>
+                    <div class='flex flex-wrap items-center justify-center lg:justify-start gap-6 mt-10'>
+                        <div class='flex items-center gap-2 text-white/80'><svg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path></svg><span class='font-medium'>WiFi</span><span class='text-sm'>Ãœcretsiz</span></div>
+                        <div class='flex items-center gap-2 text-white/80'><svg width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'><circle cx='12' cy='12' r='10'></circle><polyline points='12 6 12 12 16 14'></polyline></svg><span class='font-medium'>08:00 - 14:00</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='menu' class='py-20 px-4 bg-white' aria-labelledby='menu-title'>
+            <div class='max-w-6xl mx-auto'>
+                <div class='text-center mb-12 animate-fade-in'>
+                    <span class='inline-block px-4 py-1.5 glass rounded-full text-sm font-medium text-primary mb-4'>Bizim MenÃ¼mÃ¼z</span>
+                    <h2 id='menu-title' class='font-heading text-3xl md:text-4xl font-bold text-primary mb-4'>Lezzetlerimiz</h2>
+                    <p class='text-lg text-textLight max-w-2xl mx-auto'>Taze, yerel ve Ã¶zenle seÃ§ilmiÅŸ malzemelerle hazÄ±rladÄ±ÄŸÄ±mÄ±z lezzetler. <span class='font-medium text-primary'>(Bu bir satÄ±ÅŸ demosudur; fiyatlar ve Ã¼rÃ¼nler Ã¶rnek amaÃ§lÄ±dÄ±r.)</span></p>
+                </div>
+                <div class='flex flex-wrap justify-center gap-2 mb-10 animate-slide-up' role='tablist' aria-label='MenÃ¼ kategorileri'>
+                    <button role='tab' aria-selected='true' aria-controls='panel-serpme-kahvaltä±' id='tab-serpme-kahvaltä±' class='tab-btn px-5 py-2.5 rounded-full glass font-medium text-sm text-white bg-primary transition-all focus-visible' data-tab='serpme-kahvaltä±'>Serpme KahvaltÄ±</button><button role='tab' aria-selected='false' aria-controls='panel-menemen-ã‡eåÿitleri' id='tab-menemen-ã‡eåÿitleri' class='tab-btn px-5 py-2.5 rounded-full glass font-medium text-sm text-primary/70 hover:bg-primary/10 transition-all focus-visible' data-tab='menemen-ã‡eåÿitleri'>Menemen Ã‡eÅŸitleri</button><button role='tab' aria-selected='false' aria-controls='panel-omletler' id='tab-omletler' class='tab-btn px-5 py-2.5 rounded-full glass font-medium text-sm text-primary/70 hover:bg-primary/10 transition-all focus-visible' data-tab='omletler'>Omletler</button><button role='tab' aria-selected='false' aria-controls='panel-ã‡ay--kahve' id='tab-ã‡ay--kahve' class='tab-btn px-5 py-2.5 rounded-full glass font-medium text-sm text-primary/70 hover:bg-primary/10 transition-all focus-visible' data-tab='ã‡ay--kahve'>Ã‡ay & Kahve</button><button role='tab' aria-selected='false' aria-controls='panel-tatlä±lar' id='tab-tatlä±lar' class='tab-btn px-5 py-2.5 rounded-full glass font-medium text-sm text-primary/70 hover:bg-primary/10 transition-all focus-visible' data-tab='tatlä±lar'>TatlÄ±lar</button>
+                </div>
+                <div class='space-y-8'><div role='tabpanel' id='panel-serpme-kahvaltä±' aria-labelledby='tab-serpme-kahvaltä±' class='menu-panel  animate-fade-in'>
+            <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                <div class='col-span-full text-center py-12 glass rounded-2xl'>
+                    <svg width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='#6F4E37' stroke-width='1.5' class='mx-auto mb-4 opacity-50'><rect x='3' y='3' width='18' height='18' rx='2'></rect><path d='M9 9h6v6H9z'></path></svg>
+                    <h3 class='font-heading text-lg font-bold #3D2B1F mb-2'>Serpme KahvaltÄ±</h3>
+                    <p class='text-#3D2B1F/60'>ÃœrÃ¼nler ve fiyatlar sizden alÄ±nÄ±p eklenecek</p>
+                </div>
+            </div>
+        </div><div role='tabpanel' id='panel-menemen-ã‡eåÿitleri' aria-labelledby='tab-menemen-ã‡eåÿitleri' class='menu-panel hidden animate-fade-in'>
+            <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                <div class='col-span-full text-center py-12 glass rounded-2xl'>
+                    <svg width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='#6F4E37' stroke-width='1.5' class='mx-auto mb-4 opacity-50'><rect x='3' y='3' width='18' height='18' rx='2'></rect><path d='M9 9h6v6H9z'></path></svg>
+                    <h3 class='font-heading text-lg font-bold #3D2B1F mb-2'>Menemen Ã‡eÅŸitleri</h3>
+                    <p class='text-#3D2B1F/60'>ÃœrÃ¼nler ve fiyatlar sizden alÄ±nÄ±p eklenecek</p>
+                </div>
+            </div>
+        </div><div role='tabpanel' id='panel-omletler' aria-labelledby='tab-omletler' class='menu-panel hidden animate-fade-in'>
+            <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                <div class='col-span-full text-center py-12 glass rounded-2xl'>
+                    <svg width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='#6F4E37' stroke-width='1.5' class='mx-auto mb-4 opacity-50'><rect x='3' y='3' width='18' height='18' rx='2'></rect><path d='M9 9h6v6H9z'></path></svg>
+                    <h3 class='font-heading text-lg font-bold #3D2B1F mb-2'>Omletler</h3>
+                    <p class='text-#3D2B1F/60'>ÃœrÃ¼nler ve fiyatlar sizden alÄ±nÄ±p eklenecek</p>
+                </div>
+            </div>
+        </div><div role='tabpanel' id='panel-ã‡ay--kahve' aria-labelledby='tab-ã‡ay--kahve' class='menu-panel hidden animate-fade-in'>
+            <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                <div class='col-span-full text-center py-12 glass rounded-2xl'>
+                    <svg width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='#6F4E37' stroke-width='1.5' class='mx-auto mb-4 opacity-50'><rect x='3' y='3' width='18' height='18' rx='2'></rect><path d='M9 9h6v6H9z'></path></svg>
+                    <h3 class='font-heading text-lg font-bold #3D2B1F mb-2'>Ã‡ay & Kahve</h3>
+                    <p class='text-#3D2B1F/60'>ÃœrÃ¼nler ve fiyatlar sizden alÄ±nÄ±p eklenecek</p>
+                </div>
+            </div>
+        </div><div role='tabpanel' id='panel-tatlä±lar' aria-labelledby='tab-tatlä±lar' class='menu-panel hidden animate-fade-in'>
+            <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                <div class='col-span-full text-center py-12 glass rounded-2xl'>
+                    <svg width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='#6F4E37' stroke-width='1.5' class='mx-auto mb-4 opacity-50'><rect x='3' y='3' width='18' height='18' rx='2'></rect><path d='M9 9h6v6H9z'></path></svg>
+                    <h3 class='font-heading text-lg font-bold #3D2B1F mb-2'>TatlÄ±lar</h3>
+                    <p class='text-#3D2B1F/60'>ÃœrÃ¼nler ve fiyatlar sizden alÄ±nÄ±p eklenecek</p>
+                </div>
+            </div>
+        </div></div>
+                <div class='text-center mt-12 animate-slide-up'>
+                    <a href='https://wa.me/905010515721' target='_blank' rel='noopener noreferrer' class='btn-cta inline-flex items-center gap-2 focus-visible'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> WhatsApp'ta SipariÅŸ / Rezervasyon</a>
+                </div>
+            </div>
+        </section>
+
+        <section id='hakkinda' class='py-20 px-4' style='background: #FAF6F0;' aria-labelledby='about-title'>
+            <div class='max-w-6xl mx-auto'>
+                <div class='grid lg:grid-cols-2 gap-12 items-center'>
+                    <div class='relative animate-slide-up'>
+                        <div class='aspect-[4/3] rounded-3xl overflow-hidden glass shadow-2xl' style='background-image: url(https://images.unsplash.com/photo-1551024506-0bccd828d307?w=1200&q=80); background-size: cover; background-position: center; background-color: #6F4E37;' aria-hidden='true'></div>
+                        <div class='absolute -bottom-6 -left-6 glass px-6 py-4 rounded-2xl shadow-xl animate-slide-up' style='animation-delay: 0.2s; background: rgba(255,255,255,0.9);'>
+                            <div class='flex items-center gap-6 text-center'>
+                                <div><p class='font-heading text-2xl font-bold' style='color: #6F4E37;'>1"k+</p><p class='text-xs text-textLight'>Yorum</p></div>
+                                <div class='w-px h-8' style='background: #6F4E3740;'></div>
+                                <div><p class='font-heading text-2xl font-bold' style='color: #6F4E37;'>4.8</p><p class='text-xs text-textLight'>Puan</p></div>
+                                <div class='w-px h-8' style='background: #6F4E3740;'></div>
+                                <div><p class='font-heading text-2xl font-bold' style='color: #6F4E37;'>7/7</p><p class='text-xs text-textLight'>AÃ§Ä±k</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='animate-slide-up' style='animation-delay: 0.3s;'>
+                        <span class='inline-block px-4 py-1.5 glass rounded-full text-sm font-medium text-primary mb-4'>HakkÄ±mÄ±zda</span>
+                        <h2 id='about-title' class='font-heading text-3xl md:text-4xl font-bold text-primary mb-6'>PÃ–TÄ°KARE KAHVALTI CAFE Hikayesi</h2>
+                        <div class='space-y-4 text-textLight leading-relaxed'>
+                            <p class='text-lg'>PÃ–TÄ°KARE KAHVALTI CAFE, TahÄ±lpazarÄ±'de 08:00 - 14:00 hizmet veriyor. KÃ¶y YumurtasÄ±, taze peynir tabaäÿä± ve sanat atã¶lyesi ile misafirlerine unutulmaz anlar yaÅŸatÄ±yor.</p>
+                            <p>Google'da 169 yorumla 4.8 puan alan PÃ–TÄ°KARE KAHVALTI CAFE, kahvaltÄ± kategorisinde bÃ¶lgenin en sevilen yerlerinden biri.</p>
+                        </div>
+                        <div class='flex flex-wrap gap-3 mt-8'><span class='px-3 py-1 glass rounded-full text-sm font-medium #3D2B1F/80'>KÃ¶y YumurtasÄ±</span><span class='px-3 py-1 glass rounded-full text-sm font-medium #3D2B1F/80'>Taze Peynir TabaÄŸÄ±</span><span class='px-3 py-1 glass rounded-full text-sm font-medium #3D2B1F/80'>Sanat AtÃ¶lyesi</span><span class='px-3 py-1 glass rounded-full text-sm font-medium #3D2B1F/80'>Vegan SeÃ§enekler</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='iletisim' class='py-20 px-4 bg-white' aria-labelledby='contact-title'>
+            <div class='max-w-6xl mx-auto'>
+                <div class='text-center mb-12 animate-fade-in'>
+                    <span class='inline-block px-4 py-1.5 glass rounded-full text-sm font-medium text-primary mb-4'>Ä°letiÅŸim & Konum</span>
+                    <h2 id='contact-title' class='font-heading text-3xl md:text-4xl font-bold text-primary mb-4'>Gelin, TanÄ±ÅŸalÄ±m</h2>
+                </div>
+                <div class='grid lg:grid-cols-2 gap-12'>
+                    <div class='space-y-6 animate-slide-up'>
+                        <div class='glass p-6 rounded-2xl'>
+                            <h3 class='font-heading text-xl font-bold text-primary mb-6'>Ä°letiÅŸim</h3>
+                            <a href='https://wa.me/905010515721' target='_blank' rel='noopener noreferrer' class='flex items-center gap-4 p-4 glass rounded-xl hover:bg-primary/5 transition-colors focus-visible'>
+                                <div class='w-12 h-12 rounded-xl' style='background: #C49A6C20;'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#C49A6C' stroke-width='2'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C49A6C" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></svg></div>
+                                <div><p class='text-sm text-textLight'>WhatsApp (HÄ±zlÄ± Cevap)</p><p class='font-medium text-text'>+905010515721</p></div>
+                            </a>
+                            <div class='flex items-center gap-4 p-4 glass rounded-xl'><div class='w-12 h-12 rounded-xl' style='background: #6F4E3720;'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#6F4E37' stroke-width='2'><path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'></path><circle cx='12' cy='10' r='3'></circle></svg></div><div><p class='text-sm text-textLight'>Adres</p><p class='font-medium text-text'>TahÄ±lpazarÄ±, 404. Sk. Ahmet Bedesteni Ä°ÅŸ HanÄ± No:5/F, 07040 MuratpaÅŸa/Antalya</p></div></div>
+                        </div>
+                        <div class='glass p-6 rounded-2xl'>
+                            <h3 class='font-heading text-xl font-bold text-primary mb-6'>Ã‡alÄ±ÅŸma Saatleri</h3>
+                            <p class='text-text'>08:00 - 14:00 â€¢ Her gÃ¼n aÃ§Ä±k</p>
+                            <p class='text-sm text-textLight mt-2'>KiÅŸi baÅŸÄ± ortalama: 150-300 â‚º</p>
+                        </div>
+                    </div>
+                    <div class='animate-slide-up' style='animation-delay: 0.2s;'>
+                        <div class='aspect-[4/3] rounded-2xl overflow-hidden glass shadow-xl mb-6 relative' aria-label='PÃ–TÄ°KARE KAHVALTI CAFE konumu'>
+                            <iframe src='https://www.google.com/maps/search/?api=1&query=Tah%c3%84%c2%b1lpazar%c3%84%c2%b1%2c+404.+Sk.+Ahmet+Bedesteni+%c3%84%c2%b0%c3%85%c5%b8+Han%c3%84%c2%b1+No%3a5%2fF%2c+07040+Muratpa%c3%85%c5%b8a%2fAntalya&output=embed' class='absolute inset-0 w-full h-full' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade' title='PÃ–TÄ°KARE KAHVALTI CAFE konumu'></iframe>
+                            <div class='absolute inset-0 flex items-center justify-center' style='background: linear-gradient(135deg, #6F4E3730, #C49A6C30);'>
+                                <a href='https://www.google.com/maps/search/?api=1&query=Tah%c3%84%c2%b1lpazar%c3%84%c2%b1%2c+404.+Sk.+Ahmet+Bedesteni+%c3%84%c2%b0%c3%85%c5%b8+Han%c3%84%c2%b1+No%3a5%2fF%2c+07040+Muratpa%c3%85%c5%b8a%2fAntalya' target='_blank' rel='noopener noreferrer' class='btn-cta inline-flex items-center gap-2'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Yol Tarifi Al</a>
+                            </div>
+                        </div>
+                        <div class='glass p-6 rounded-2xl'>
+                            <h3 class='font-heading text-xl font-bold text-primary mb-6'>HÄ±zlÄ± Rezervasyon / SipariÅŸ</h3>
+                            <form id='reservation-form' class='space-y-4' onsubmit='submitToWhatsApp(event)'>
+                                <input type='hidden' name='business' value='PÃ–TÄ°KARE KAHVALTI CAFE'>
+                                <div class='grid sm:grid-cols-2 gap-4'><div><label class='block text-sm font-medium text-text mb-1'>Ad Soyad *</label><input type='text' name='name' required class='w-full px-4 py-3 glass border border-glassBorder rounded-xl focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent text-text placeholder-textLight' placeholder='AdÄ±nÄ±z SoyadÄ±nÄ±z'></div><div><label class='block text-sm font-medium text-text mb-1'>Telefon *</label><input type='tel' name='phone' required class='w-full px-4 py-3 glass border border-glassBorder rounded-xl focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent text-text placeholder-textLight' placeholder='05XX XXX XX XX'></div></div>
+                                <div class='grid sm:grid-cols-2 gap-4'><div><label class='block text-sm font-medium text-text mb-1'>Tarih *</label><input type='date' name='date' required class='w-full px-4 py-3 glass border border-glassBorder rounded-xl focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent text-text' min='2026-11-21'></div><div><label class='block text-sm font-medium text-text mb-1'>Saat *</label><input type='time' name='time' required min='08:00' max='22:00' class='w-full px-4 py-3 glass border border-glassBorder rounded-xl focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent text-text'></div></div>
+                                <div><label class='block text-sm font-medium text-text mb-1'>KiÅŸi SayÄ±sÄ± *</label><select name='guests' required class='w-full px-4 py-3 glass border border-glassBorder rounded-xl focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent text-text'><option value=''>SeÃ§in</option><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6+</option></select></div>
+                                <div><label class='block text-sm font-medium text-text mb-1'>Notlar (Alerji, Ã¶zel istek, vb.)</label><textarea name='notes' rows='3' class='w-full px-4 py-3 glass border border-glassBorder rounded-xl focus:outline-none focus:ring-2 focus:ring-cta focus:border-transparent text-text placeholder-textLight resize-none' placeholder='Ã–rn: Pencere kenarÄ±, alerji, doÄŸum gÃ¼nÃ¼...'></textarea></div>
+                                <button type='submit' class='btn-cta w-full py-4 text-lg focus-visible inline-flex items-center justify-center gap-2'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> WhatsApp'ta GÃ¶nder</button>
+                                <p class='text-xs text-textLight text-center'>Form gÃ¶nderildiÄŸinde WhatsApp aÃ§Ä±lacak, mesajÄ±nÄ±zÄ± onaylayÄ±p gÃ¶nderin.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class='text-white py-12 px-4' style='background: #6F4E37;' role='contentinfo'>
+        <div class='max-w-6xl mx-auto'>
+            <div class='grid md:grid-cols-4 gap-8 mb-10'>
+                <div class='md:col-span-2'><a href='#' class='flex items-center gap-2 mb-4'><span class='font-heading text-xl font-bold'>PÃ–TÄ°KARE KAHVALTI CAFE</span></a><p class='text-white/70 mb-6 max-w-md'>KÃ¶y yumurtasÄ±, taze peynirler, ÅŸiir dolu masalar.</p><div class='flex gap-4'><a href='https://wa.me/905010515721' target='_blank' rel='noopener noreferrer' class='w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors focus-visible'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a><a href='https://www.google.com/maps/search/?api=1&query=Tah%c3%84%c2%b1lpazar%c3%84%c2%b1%2c+404.+Sk.+Ahmet+Bedesteni+%c3%84%c2%b0%c3%85%c5%b8+Han%c3%84%c2%b1+No%3a5%2fF%2c+07040+Muratpa%c3%85%c5%b8a%2fAntalya' target='_blank' rel='noopener noreferrer' class='w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors focus-visible'><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></div></div>
+                <div><h4 class='font-heading text-lg font-bold mb-4'>HÄ±zlÄ± EriÅŸim</h4><nav><ul class='space-y-3'><li><a href='#menu' class='text-white/70 hover:text-white transition-colors focus-visible rounded px-2 py-1'>MenÃ¼</a></li><li><a href='#hakkinda' class='text-white/70 hover:text-white transition-colors focus-visible rounded px-2 py-1'>HakkÄ±mÄ±zda</a></li><li><a href='#iletisim' class='text-white/70 hover:text-white transition-colors focus-visible rounded px-2 py-1'>Konum</a></li></ul></nav></div>
+                <div><h4 class='font-heading text-lg font-bold mb-4'>Saatler</h4><ul class='space-y-2 text-white/70 text-sm'><li class='flex justify-between'><span>08:00 - 14:00</span><span class='text-white'>Her gÃ¼n</span></li></ul></div>
+            </div>
+            <div class='border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4'><p class='text-white/60 text-sm'>&copy; 2024 PÃ–TÄ°KARE KAHVALTI CAFE. TÃ¼m haklarÄ± saklÄ±dÄ±r.</p><div class='flex items-center gap-6 text-xs text-white/60'><span class='font-medium'>Ã–rnek SatÄ±ÅŸ Demosu Â· LIKYA STUDIOS</span><a href='https://likyastudios.live' target='_blank' class='hover:text-white transition-colors'>likyastudios.live</a></div></div>
+        </div>
+    </footer>
+
+    <div id='order-badge' class='order-badge' role='status' aria-live='polite'>
+        <span id='order-count'>0</span> Ã¼rÃ¼n eklendi
+        <button onclick='openOrderSummary()' class='btn-cta px-4 py-2 text-sm'>GÃ¶ster</button>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js'></script>
+    <script>
+        let orderItems = [];
+        const badge = document.getElementById('order-badge');
+        const countEl = document.getElementById('order-count');
+        
+        function addToOrder(name, price) {
+            const existing = orderItems.find(i => i.name === name);
+            if (existing) existing.qty++;
+            else orderItems.push({ name, price: parseInt(price), qty: 1 });
+            updateBadge();
+        }
+        
+        function updateBadge() {
+            const total = orderItems.reduce((s, i) => s + i.qty, 0);
+            countEl.textContent = total;
+            badge.style.display = total > 0 ? 'flex' : 'none';
+        }
+        
+        function openOrderSummary() {
+            if (orderItems.length === 0) return;
+            let msg = '*SipariÅŸ Ã–zeti - PÃ–TÄ°KARE KAHVALTI CAFE*\n\n';
+            let total = 0;
+            orderItems.forEach(i => {
+                msg += 'â€¢ ' + i.name + ' x' + i.qty + ' = ' + (i.price * i.qty) + 'â‚º\n';
+                total += i.price * i.qty;
+            });
+            msg += '\n*Toplam: ' + total + 'â‚º*';
+            const url = 'https://wa.me/905010515721?text=' + encodeURIComponent(msg);
+            window.open(url, '_blank');
+        }
+        
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tab = btn.dataset.tab;
+                document.querySelectorAll('.tab-btn').forEach(b => {
+                    const active = b.dataset.tab === tab;
+                    b.setAttribute('aria-selected', active);
+                    b.classList.toggle('text-white', active);
+                    b.classList.toggle('bg-primary', active);
+                    b.classList.toggle('text-primary/70', !active);
+                    b.classList.toggle('hover:bg-primary/10', !active);
+                });
+                document.querySelectorAll('.menu-panel').forEach(p => {
+                    const active = p.id === 'panel-' + tab;
+                    p.classList.toggle('hidden', !active);
+                    p.setAttribute('aria-hidden', !active);
+                });
+            });
+        });
+        
+        document.querySelectorAll('.tab-btn').forEach((btn, idx, arr) => {
+            btn.addEventListener('keydown', e => {
+                let newIdx = idx;
+                if (e.key === 'ArrowRight') newIdx = (idx + 1) % arr.length;
+                else if (e.key === 'ArrowLeft') newIdx = (idx - 1 + arr.length) % arr.length;
+                else if (e.key === 'Home') newIdx = 0;
+                else if (e.key === 'End') newIdx = arr.length - 1;
+                else return;
+                e.preventDefault();
+                arr[newIdx].focus();
+                arr[newIdx].click();
+            });
+        });
+        
+        document.querySelectorAll('a[href^=#]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const navH = document.querySelector('nav').offsetHeight;
+                    window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - navH, behavior: 'smooth' });
+                    target.focus({ preventScroll: true });
+                }
+            });
+        });
+        
+        function submitToWhatsApp(e) {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+            let msg = '*Rezervasyon / SipariÅŸ - PÃ–TÄ°KARE KAHVALTI CAFE*\n\n';
+            for (const [key, value] of data.entries()) {
+                if (key !== 'business' && value) {
+                    const label = { name: 'Ad Soyad', phone: 'Telefon', date: 'Tarih', time: 'Saat', guests: 'KiÅŸi SayÄ±sÄ±', notes: 'Notlar' }[key] || key;
+                    msg += '*'+label+':* '+value+'\n';
+                }
+            }
+            msg += '\nLÃ¼tfen onaylayÄ±n. TeÅŸekkÃ¼rler!';
+            const url = 'https://wa.me/905010515721?text=' + encodeURIComponent(msg);
+            window.open(url, '_blank');
+        }
+        
+        document.querySelector('input[type=date]').min = new Date().toISOString().split('T')[0];
+        
+        console.log('âœ… PÃ–TÄ°KARE KAHVALTI CAFE - Production site loaded');
+        console.log('ğŸ¨ Theme: cafe | ğŸ“± QR Target: https://likyastudio.github.io/potikare-kahvalti-cafe/menu');
+    </script>
+</body>
+</html>
