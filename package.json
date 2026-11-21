@@ -1,0 +1,6 @@
+﻿{
+  "name": "ikya-studios-restaurants",
+  "version": "1.0.0",
+  "scripts": { "build": "echo 'Static site - no build needed'", "dev": "vercel dev" },
+  "devDependencies": { "vercel": "^32.0.0" }
+}
